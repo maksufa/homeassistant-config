@@ -1,0 +1,164 @@
+- id: '1545752050941'
+  alias: Turn off thermostats
+  trigger:
+  - entity_id: device_tracker.maks_maks
+    from: home
+    platform: state
+    to: not_home
+  condition: []
+  action:
+  - data:
+      payload: away
+      topic: slaves/climate/bathroom/state/set
+    service: mqtt.publish
+- id: '1545753025912'
+  alias: Turn on thermostats
+  trigger:
+  - entity_id: device_tracker.maks_maks
+    from: not_home
+    platform: state
+    to: home
+  condition: []
+  action:
+  - data:
+      payload: auto
+      topic: slaves/climate/bathroom/state/set
+    service: mqtt.publish
+- id: '1546039507803'
+  alias: Update bathroom thermostat mode
+  trigger:
+  - platform: mqtt
+    topic: master/climate/bathroom/state/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.bathroom
+    data_template:
+      operation_mode: '{{ trigger.payload }}'
+    service: climate.set_operation_mode
+- id: '1546098414474'
+  alias: Update bathroom thermostat target temperature
+  trigger:
+  - platform: mqtt
+    topic: master/climate/bathroom/temperature/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.bathroom
+    data_template:
+      temperature: '{{ trigger.payload }}'
+    service: climate.set_temperature
+- id: '1546039507803'
+  alias: Update living room thermostat mode
+  trigger:
+  - platform: mqtt
+    topic: master/climate/livingroom/state/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.livingroom
+    data_template:
+      operation_mode: '{{ trigger.payload }}'
+    service: climate.set_operation_mode
+- id: '1546098414474'
+  alias: Update living room thermostat target temperature
+  trigger:
+  - platform: mqtt
+    topic: master/climate/livingroom/temperature/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.livingroom
+    data_template:
+      temperature: '{{ trigger.payload }}'
+    service: climate.set_temperature
+- id: '1546039507803'
+  alias: Update bedroom thermostat mode
+  trigger:
+  - platform: mqtt
+    topic: master/climate/bedroom/state/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.bedroom
+    data_template:
+      operation_mode: '{{ trigger.payload }}'
+    service: climate.set_operation_mode
+- id: '1546098414474'
+  alias: Update bedroom thermostat target temperature
+  trigger:
+  - platform: mqtt
+    topic: master/climate/bedroom/temperature/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.bedroom
+    data_template:
+      temperature: '{{ trigger.payload }}'
+    service: climate.set_temperature
+- id: '1546039507803'
+  alias: Update small room thermostat mode
+  trigger:
+  - platform: mqtt
+    topic: master/climate/smallroom/state/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.smallroom
+    data_template:
+      operation_mode: '{{ trigger.payload }}'
+    service: climate.set_operation_mode
+- id: '1546098414474'
+  alias: Update small room thermostat target temperature
+  trigger:
+  - platform: mqtt
+    topic: master/climate/smallroom/temperature/set
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: climate.smallroom
+    data_template:
+      temperature: '{{ trigger.payload }}'
+    service: climate.set_temperature
+- id: '1546274737245'
+  alias: Turn on light in toilet
+  trigger:
+  - entity_id: binary_sensor.motion_sensor_158d000171b94f
+    from: 'off'
+    platform: state
+    to: 'on'
+    for:
+      seconds: 0.1
+  condition: []
+  action:
+  - data:
+      entity_id: light.living_room
+    service: light.turn_on
+  - delay: 00:03:00
+  - condition: state
+    entity_id: binary_sensor.motion_sensor_158d000171b94f
+    state: 'off'
+  - data:
+      entity_id: light.living_room
+    service: light.turn_off
+- id: '1547416160756'
+  alias: Ficus benjamina moisture too low!
+  trigger:
+  - above: '0'
+    below: '38'
+    entity_id: sensor.ficus_benjamina_moisture
+    platform: numeric_state
+  condition: []
+  action:
+  - data:
+      message: Ficus moisture to low!
+      title: Warning
+    service: persistent_notification.create

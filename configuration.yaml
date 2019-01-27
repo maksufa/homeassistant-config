@@ -1,0 +1,192 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 52.244206
+  longitude: 20.996723
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Poland
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+  themes: !include themes.yaml
+
+# Enables configuration UI
+config:
+
+api:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+lovelace:
+  mode: yaml
+
+shopping_list:
+
+weather:
+  - platform: openweathermap
+    api_key: 8503cb66dfca8152953cf6f2a68cc537
+
+sun:
+
+camera:
+  - platform: generic
+    name: Vacuum Map
+    still_image_url: https://ufinkowohome.duckdns.org/local/navmap.png
+    content_type: image/png
+    framerate: 1
+
+sensor:
+  - platform: miflora
+    mac: 'C4:7C:8D:65:F9:11'
+    name: Ficus benjamina
+  - platform: miflora
+    mac: 'C4:7C:8D:65:F9:A8' 
+    name: Sukulencik
+  - platform: miflora
+    mac: 'C4:7C:8D:65:F4:3F' 
+    name: Calluna vulgaris  
+  - platform: yr
+  - platform: airvisual
+    api_key: 3BvMHmwWGwPDxwPX7
+  - platform: cpuspeed
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use
+      - type: memory_use_percent
+      - type: processor_use 
+  - platform: cert_expiry
+    host: ufinkowohome.duckdns.org  
+  - platform: mqtt
+    name: Temperature
+    state_topic: slave/sensor/mitemp_bt_temperature/state
+  - platform: mqtt
+    name: Humidity
+    state_topic: slave/sensor/mitemp_bt_humidity/state      
+  - platform: mqtt
+    name: Battery
+    state_topic: slave/sensor/mitemp_bt_battery/state
+  # - platform: mqtt
+  #   name: Bedroom thermostat
+  #   state_topic: slave/sensor/mitemp_bt_battery/state
+  # - platform: mqtt
+  #   name: Small room thermostat
+  #   state_topic: slave/sensor/mitemp_bt_battery/state    
+
+climate:
+  - platform: eq3btsmart
+    name: Bathroom thermostat
+    devices:
+      bathroom:
+        mac: '00:1A:22:0F:BC:9D'
+  - platform: eq3btsmart
+    name: Living room thermostat
+    devices:
+      livingroom:
+        mac: '00:1A:22:0F:D0:72'
+  # - platform: mqtt
+  #   name: Bedroom thermostat
+  #   current_temperature_topic: slave/climate/bedroom/current_temperature
+  #   temperature_state_topic: slave/climate/bedroom/temperature
+  #   temperature_command_topic: master/climate/bedroom/temperature/set
+  #   mode_state_topic: slave/climate/bedroom/state
+  #   mode_command_topic: master/climate/bedroom/state/set
+  #   modes: ["on", "off", "auto", "manual", "boost", "away"]
+  # - platform: mqtt
+  #   name: Small room thermostat
+  #   current_temperature_topic: slave/climate/small_room/current_temperature
+  #   temperature_state_topic: slave/climate/small_room/temperature
+  #   temperature_command_topic: master/climate/small_room/temperature/set
+  #   mode_state_topic: slave/climate/small_room/state
+  #   mode_command_topic: master/climate/small_room/state/set
+  #   modes: ["on", "off", "auto", "manual", "boost", "away"]               
+        
+light:
+  - platform: yeelight
+    devices:
+      192.168.0.101:
+        name: Living Room    
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.0.122
+    token: 51646a446433516e6f483066466f625a 
+
+xiaomi_aqara:
+  discovery_retry: 5
+  gateways:
+    - key: 1k0yt4kdht7lsxly
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+mqtt:
+  broker: 192.168.0.220
+  port: 1883
+  keepalive: 60
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.mqtt: debug
+
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
+
+panel_iframe:
+  c9ide:
+    icon: mdi:monitor-dashboard
+    title: 'c9IDE'
+    url: 'http://192.168.0.220:8383'
+  hainstance2:
+    icon: mdi:monitor-dashboard
+    title: 'HAInstance2'
+    url: 'http://192.168.0.115:8123'   
+ 
+  
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

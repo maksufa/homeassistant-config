@@ -1,0 +1,148 @@
+resources:
+  - url: /local/custom-lovelace/weather-card/weather-card.js
+    type: module
+
+title: Home
+views:
+  - cards:
+      - type: entities
+        entities:
+          - entity: automation.turn_on_thermostats
+          - entity: automation.turn_off_thermostats
+          - entity: automation.turn_on_light_in_toilet
+        title: Automations
+      - type: picture-entity
+        entity: camera.vacuum_map
+        image: /local/navmap.png
+      - type: light
+        entity: light.living_room
+      - type: entities
+        entities:
+          - vacuum.xiaomi_vacuum_cleaner
+        title: Kajtek ssacz
+      - type: glance
+        entities:
+          - sensor.temperature
+          - sensor.humidity
+          - sensor.battery
+        title: Bedroom
+      - type: custom:weather-card
+        entity: weather.openweathermap
+        icons: "/local/custom-lovelace/weather-card/icons/animated/"
+      - type: iframe
+        url: https://embed.windy.com/embed2.html?lat=52.097&lon=19.116&zoom=6&level=surface&overlay=rain&menu=&message=true&marker=&calendar=24&pressure=&type=map&location=coordinates&detail=&detailLat=52.230&detailLon=21.010&metricWind=default&metricTemp=default&radarRange=-1
+        aspect_ratio: 100%  
+      - type: thermostat
+        entity: climate.bathroom
+      - type: thermostat
+        entity: climate.livingroom  
+      - type: light
+        entity: light.gateway_light_7811dcb7a4d6
+    badges:
+      - binary_sensor.motion_sensor_158d000171b94f
+      - device_tracker.maks_maks
+      - sensor.yr_symbol
+      - sensor.chinese_air_pollution_level
+      - sensor.us_air_pollution_level
+      - sensor.us_main_pollutant
+      - sensor.illumination_7811dcb7a4d6
+      - sensor.chinese_air_quality_index
+      - sensor.chinese_main_pollutant
+      - sensor.us_air_quality_index
+      - sun.sun
+    title: Home
+    path: home
+  - cards:
+      - cards:
+          - show_state: false
+            entity: sensor.ficus_benjamina_temperature
+            name: Ficus benjamina
+            title: Ficus benjamina
+            image: /local/ficus.jpg
+            type: picture-entity
+          - type: entities
+            entities:
+            - entity: sensor.ficus_benjamina_temperature
+              icon: mdi:temperature-celsius
+            - entity: sensor.ficus_benjamina_moisture
+              icon: mdi:water
+            - entity: sensor.ficus_benjamina_conductivity
+              icon: mdi:flash 
+            - entity: sensor.ficus_benjamina_light_intensity
+              icon: mdi:weather-sunny
+            - entity: sensor.ficus_benjamina_battery
+              icon: mdi:battery-bluetooth
+        type: vertical-stack
+      - cards:
+          - show_state: false
+            entity: sensor.sukulencik_temperature
+            name: Sukulencik
+            title: Sukulencik
+            image: /local/sukulencik.jpg
+            type: picture-entity
+          - type: entities
+            entities:
+            - entity: sensor.sukulencik_temperature
+              icon: mdi:temperature-celsius
+            - entity: sensor.sukulencik_moisture
+              icon: mdi:water
+            - entity: sensor.sukulencik_conductivity
+              icon: mdi:flash 
+            - entity: sensor.sukulencik_light_intensity
+              icon: mdi:weather-sunny
+            - entity: sensor.sukulencik_battery
+              icon: mdi:battery-bluetooth     
+        type: vertical-stack
+      - cards:
+          - show_state: false
+            entity: sensor.calluna_vulgaris_temperature
+            name: Calluna vulgaris
+            title: Calluna vulagris
+            image: /local/sukulencik.jpg
+            type: picture-entity
+          - type: entities
+            entities:
+            - entity: sensor.calluna_vulgaris_temperature
+              icon: mdi:temperature-celsius
+            - entity: sensor.calluna_vulgaris_moisture
+              icon: mdi:water
+            - entity: sensor.calluna_vulgaris_conductivity
+              icon: mdi:flash 
+            - entity: sensor.calluna_vulgaris_light_intensity
+              icon: mdi:weather-sunny
+            - entity: sensor.calluna_vulgaris_battery
+              icon: mdi:battery-bluetooth     
+        type: vertical-stack  
+    badges: []
+    title: Flowers
+    path: flowers  
+  - cards:
+      - type: gauge
+        entity: sensor.disk_use_percent_home
+      - type: gauge
+        entity: sensor.memory_use_percent
+      - type: gauge
+        entity: sensor.processor_use
+      - type: sensor
+        entity: sensor.memory_use
+        graph: line
+      - type: sensor
+        entity: sensor.cpu_speed
+        graph: line
+      - type: sensor
+        entity: sensor.memory_free
+        graph: line
+      - type: sensor
+        entity: sensor.ssl_certificate_expiry
+        graph: line
+    theme: Backend-selected
+    badges: []
+    title: Benchmark
+    path: test
+  - cards:
+      - type: shopping-list
+    theme: Backend-selected
+    badges: []
+    title: Shopping list
+    path: list 
+

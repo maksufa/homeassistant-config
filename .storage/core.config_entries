@@ -1,0 +1,29 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "secret": "3ad33a7473c36edba81eb1b90416e444",
+                    "webhook_id": "eb7387b15dec8f3c6956ca828e07644d16edfc139eca920db8f5b33b9be9ce2c"
+                },
+                "domain": "owntracks",
+                "entry_id": "a16a1977da3c4b7885a25cbff9926a1c",
+                "source": "import",
+                "title": "OwnTracks",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "0a2a595e76c94ce0990335d696f5805f",
+                "source": "import",
+                "title": "configuration.yaml",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

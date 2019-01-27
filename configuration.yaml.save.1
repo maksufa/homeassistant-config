@@ -1,0 +1,142 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 52.244206
+  longitude: 20.996723
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Poland
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+# introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+# discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+weather:
+  - platform: openweathermap
+    api_key: 8503cb66dfca8152953cf6f2a68cc537
+
+# Track the sun
+sun:
+
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
+  - platform: airvisual
+    api_key: gdghdgþ
+  # - platform: mitemp_bt
+  #   mac: '4C:65:A8:D9:C5:62'
+  #   monitored_conditions:
+  #     - temperature
+  #     - humidity
+  #     - battery
+  - platform: cpuspeed
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use
+      - type: memory_use_percent
+      - type: processor_use 
+  - platform: cert_expiry
+    host: ufinkowohome.duckdns.org
+  - platform: mqtt
+    state_topic: homeassistant/hello
+    name: Pantry Motion   
+
+light:
+  - platform: yeelight
+    devices:
+      192.168.0.101:
+        name: Living Room    
+
+vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.0.122
+    token: 3631316a35336d38674a6c7a6e455772
+
+
+xiaomi_aqara:
+  discovery_retry: 5
+  gateways:
+    - key: 1k0yt4kdht7lsxly
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+mqtt:
+
+mqtt_eventstream:
+  publish_topic: master/topic
+  subscribe_topic: slaves/#
+
+# mqtt:
+#   broker: m21.cloudmqtt.com
+#   port: 10653
+#   username: joanidig
+#   password: LcMbQm-gFXbK
+
+climate:
+  - platform: eq3btsmart
+    devices:
+      bathroom:
+        mac: '00:1A:22:0F:BC:9D'
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.mqtt: debug
+
+panel_custom:
+  - name: floorplan
+    sidebar_title: Floorplan
+    sidebar_icon: mdi:home
+    url_path: floorplan
+    config: !include floorplan.yaml
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

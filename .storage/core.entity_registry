@@ -1,0 +1,89 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_7811dcb7a4d6",
+                "name": "Illumination",
+                "platform": "xiaomi_aqara",
+                "unique_id": "illumination7811dcb7a4d6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d000171b94f",
+                "name": "Czujnik ruchu",
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000171b94f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_7811dcb7a4d6",
+                "name": "Centralka Xiaomi",
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgb7811dcb7a4d6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.us_main_pollutant",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_us_main_pollutant"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.us_air_quality_index",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_us_air_quality_index"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.chinese_air_pollution_level",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_cn_air_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.us_air_pollution_level",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_us_air_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.chinese_air_quality_index",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_cn_air_quality_index"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.chinese_main_pollutant",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "52.244206,20.996723_cn_main_pollutant"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

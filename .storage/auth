@@ -1,0 +1,380 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "Maks"
+                },
+                "id": "4a9be6c473284a368a605bf37f219ae9",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "legacy_api_password",
+                "data": {},
+                "id": "98c97be7abad41c28f749a18b2852157",
+                "user_id": "96b633e333584c0791e963d3ce9e1da6"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-22T21:32:45.706266+00:00",
+                "id": "ed3c589fe405422094fb6d2800db2f02",
+                "jwt_key": "7a5218759fa4dfb46f4dcb40f4db25625d2014497c28db30c1584beaf3364c73421ebeae26f446ba299b662a3ac9937a4ee67fcdb91cc74d4dbfcf40019b5166",
+                "last_used_at": "2019-01-26T12:05:26.785559+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "97ac725bc92a8b0dc92318452adecf34c66aae97aad2fc068006e8a675f59f0a8fc522b2c78ff96420b5d1a50c066eabcb442f6d9f73251d7e8a0b5891b85c00",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T17:18:59.805733+00:00",
+                "id": "ed6d2a10ed7344179018ce582923d858",
+                "jwt_key": "0739c44e1689758389c755b1d76e3df133c5421116d44265bd23176c627312c33df9dffd474e4583b8b749028fa2d4a3b055923f5da66c5edf81d22491713530",
+                "last_used_at": "2019-01-25T17:18:59.806315+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "56d35b37e50bf837ff9f7346877f7b2d569e62a0b439118bb9051e48c6d2d02ec22f11bebc0d2773a480bde1d06f0566b0c0c818bb793decb8a0e40eaadeaf54",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T14:58:44.477847+00:00",
+                "id": "895ac6047cd248a0b02e3c1b325eeae2",
+                "jwt_key": "3ed168536cc8407732a9b6cd1e51cff752258f98920f88fd1c14cf22afeb531b8673a576f1f2bdaf64fd6db668709bcd5f8a15790e30dc03bf4b88dc67d2fe63",
+                "last_used_at": "2019-01-25T14:58:44.478416+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "d7d2bab1fe01351fbbb45241e555d8795c47a4cb4c50643ef771a83515dcaaf1d5b64e00e72d16b56aa740a004b6c4b1ad06a0eafce4631edff071f43305c6a0",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T17:05:08.235328+00:00",
+                "id": "026deaf1cbae4912b0767887ab29fc9f",
+                "jwt_key": "61ae5e85052a5650d2c1a99f4beae6f0191355df17767b9473324db8cb7e88400fb60a0ca6b173d317c2c6f763989f42e8065df5ff7e074204d13f64d508b313",
+                "last_used_at": "2019-01-25T17:05:08.235906+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "4b0fe39508b058183baf453d7716c6fd9bc7f17db6790e9472452f80cf8e3444687205fdf3bb691d2813c50d07338545f22c6d49e1100b3af6229212df581dad",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-20T17:02:30.743096+00:00",
+                "id": "63c0981276d647bb81b1c5c1a76f0160",
+                "jwt_key": "94982e22345ab5a7f55a1cd1068ee46296ab7f484241a1eed03109ecdc3232b587e6df1e4a0efa8f3144286079b14677a43a5c6212e70889528c359cf2e542b0",
+                "last_used_at": "2018-12-20T18:07:33.835539+00:00",
+                "last_used_ip": "192.168.0.1",
+                "token": "3b81760ffa50b70f54df18d4584075efb9a55aeff45eb6566dd755b9d9d6ab42a5f5602950d44508f5687a2d4926ae34d152022b075d3c782511d8d1dde8d689",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T17:43:37.752521+00:00",
+                "id": "a9710bf506e94eab96d00f8219c5785f",
+                "jwt_key": "b732ce905481c788799729d7038dba430182872978d03c6f7e951a79947cd3257b9d57a1bc602f209e93158a54c81c533d2c007ae3eab6278c7d8ac1d1ef0fb7",
+                "last_used_at": "2019-01-27T13:56:03.241915+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "0b3e34ebbbbafe1407cc51fc7fbb33161e44f8b66aeb96b89dd133073f5252577b9b58dcdd7877dd0a26e748a025fae6c4761e8213ae5da2c79bd8a994ed2462",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://192.168.0.220/",
+                "client_name": null,
+                "created_at": "2018-12-23T01:34:44.953614+00:00",
+                "id": "72bbf100457d4e0c9705026e1da2dff4",
+                "jwt_key": "d5a718312c3e1652e1656ad165c5621e4d09a489d93d1f18d5fecad23c13a4bd2b16d65a9a387892ddb157316033acd36c12c8542f1f5982cfcc29ed32c1953f",
+                "last_used_at": "2018-12-23T01:34:44.953923+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "11e5328e1d5d8aeb5ddea6c453d3af7c5e6a9e3c97dba3cf975f8f48f478cfb7d4c564ec2296fea7f7a662c184cff149ddad9fc1d835d28104e24dec81e4e833",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://192.168.0.220/",
+                "client_name": null,
+                "created_at": "2018-12-23T01:35:09.381080+00:00",
+                "id": "65a272bdac3c465ea1f5fd5abee4abb8",
+                "jwt_key": "078689dc65c7b841c23670c38194c528ae70b213f9a0757e81817832270b838c7007fe364bd0d2445f0dae07db545254d5385d5c59acb670f321b149c6001617",
+                "last_used_at": "2018-12-23T01:35:09.381389+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "39ac0295142932350c2ecfe3ee5ef6a7af5ef761aaa3736efc4005e0d33c20aacabf01547690b60d040362d601c0c12ab8c7883b98f0da45275cd61de069702f",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-20T10:28:59.873882+00:00",
+                "id": "df336b8ec0ba4ba3bd107b2f483bedb9",
+                "jwt_key": "39ed13c971cf89187a60e41c82c44f4632818fb349779f8802192a6d36a1530551494466de501b1f225707d078f6e34ec01ed2242673b97e420f9aeac124b178",
+                "last_used_at": "2018-12-21T12:19:22.726920+00:00",
+                "last_used_ip": "83.175.161.90",
+                "token": "7a925971262e8400f99497c947f9211c796146ff2026bdb9171a7813b1a9b05f778d6170e6bf7ab6b9f7d2bff2695cd86233c8cab2a83129f70d9e1b173ad1d9",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-19T22:58:50.169593+00:00",
+                "id": "fddbf25eb98a415fa9f099792e291b56",
+                "jwt_key": "25938ffb3bbf092b94817e37561ee65ef49a82a8406c0d33f8a640be4fa3ff6688dcbeb600d6f46f7d41aded67e0dbdd128b3126d6973506d6ac31517ca99088",
+                "last_used_at": "2018-12-22T14:41:03.970735+00:00",
+                "last_used_ip": "188.146.163.137",
+                "token": "908a5d2d9e0ebfc6267f25c728a74c56e01063311b687b557a1b5bfa65c9a69c100e0a2df96cedafcfa043f1c155d43fd728a8cb49478789bb8476d57b30ce13",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-08T13:03:16.173989+00:00",
+                "id": "e941dcd7c5ee4103a3fbb98e7a9be6aa",
+                "jwt_key": "89a23d3bf5d5450b49ad296009eb60a2465a83a4ad03682d0b331bbb70caf5f2be7c9b442899b4781deba4709873f55842e94cb08a30f7e37528bea3168df306",
+                "last_used_at": "2019-01-08T13:03:16.174617+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "5a1c29ab21a05df9cbef1bb07aee483307ff175265aedaabff4a766bcb05f3b8fa72c98420ecf64c38aaebc82fd3f2a0a4d6936dd95af4a538b9d9de51269d33",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T13:09:41.762927+00:00",
+                "id": "5c608a68d4464ee185eaab42aedeee76",
+                "jwt_key": "81e0617b523950ada1cac93407acb1ca3b2d6e2d690cdfe521104c3ac393c65ae44dffdbdf44c4fe129a50b43a3dc25b8bac710d2c971c983a073794c5b800ad",
+                "last_used_at": "2019-01-25T13:09:41.763483+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "7bb18f4119dc63629e29c9e447ad8f56e5151a3eef2ddfbac06120f0553f3df60cf4a3872d58a5a1f2a347b117f1d6de15ccc673e9281752b8ed94db3b461dda",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-25T15:23:42.177000+00:00",
+                "id": "b58848bd953c41989ba9ae50781cfa52",
+                "jwt_key": "65e495041df419ed98f73ef48b1bce27ddbb8e12173c5efae991c3b422f9b4aa450f922a50062100471cc77dbd4f18e128100fe8e7e2bc094ddb0b535dd5f13b",
+                "last_used_at": "2018-12-25T15:23:42.177569+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "6c2509ab1e45d88f26f0b38b39d4b6365b2a6e6b544fe767fbf6d16c177d9507125af0fcd2e4cdb7a70cba850a91dbca9ced4b2bc2f2db2e9add6bb6cdca64f1",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-23T13:07:39.609384+00:00",
+                "id": "46a2e8bb60c44e6984a91e132ac54bc5",
+                "jwt_key": "d80fa602ae054714abd62d4f61f38f4f0dc3830bf90beef69d94637e1dc7d2a0fd7560e8831385e2fdaa6cca4bdcc37ed85c7990c91a0e3808eb0f8f7e42d950",
+                "last_used_at": "2019-01-23T20:40:50.627590+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "3706c5391c6032b4335c477fb7a9238e992f395622c5a262aa2b3cd99a175c92086302f87adbbbae6db1681914aa2c5baebcf3d355bad512acba25ae3a8b79b3",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-19T22:00:41.694164+00:00",
+                "id": "2a6ef0fcfa464ae9be410a73871af0c5",
+                "jwt_key": "2cd075e674014530728572c1b0a9778387b70a2806c7fc72f483647cddada131e3013f9b323d5a7b7c92700b5e76d4177ee8f70e51a91175586f6fcb37f23123",
+                "last_used_at": "2018-12-22T20:01:24.071020+00:00",
+                "last_used_ip": "192.168.0.1",
+                "token": "f70f78243fc58a9e6b0f812a712968b2f27f9e58215776c08d2888014b2288da9a2a358a87cd9ac40b4528a8324819e28bb8630a98da1d7faa0a63ea2d11857e",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2019-01-25T17:19:38.792238+00:00",
+                "id": "157929d33ee548a5b151c85c716b96b1",
+                "jwt_key": "ea337104856f18e52fbd072cd09cce2cdd82f4709125a3d31faa8ef02dd8e7395ce3ecca44c8623707567783144311e8ee416334a6da2078b7d7b7ad22c53069",
+                "last_used_at": "2019-01-25T17:19:38.792840+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "14deb4bef1df1622ab11bfe1b9c398f27008308e4161c32af4dc9f3fc0f894a1c9f6df811fd7febed5114ae91b9d5f87e3a70ce977d4efe6a73118c4123dc52d",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.220:8123/",
+                "client_name": null,
+                "created_at": "2019-01-26T18:19:24.812505+00:00",
+                "id": "97d3ff7bc6814285aee203c1a15e411b",
+                "jwt_key": "923e33da605fb92066d1f241dca8141af7d5f001c57946cd946ae1293c31c321cfbb17f18ef6b0a0e93402ac743c6ed15abe44a3048c56e436a1ed92ae53dc8b",
+                "last_used_at": "2019-01-27T11:04:58.178513+00:00",
+                "last_used_ip": "192.168.0.87",
+                "token": "574fa9ff54001f1dbd2c19a7c48b96dced1504988b378a9ee4ee92ed58029e1a882bb2648273dc5597143c0c6ed6dfc799319297181dfa236363a3c0e0862bc9",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://192.168.0.220:8123/",
+                "client_name": null,
+                "created_at": "2018-12-22T21:26:38.597178+00:00",
+                "id": "a8cb753ac167444fa0283c83a84a3038",
+                "jwt_key": "ac9c9a8f9e2ccc39e4d7ecfc200c82f12cdb2d7a0867af6d9bb7636b58223a39edf3fddb41078c61b2d3a476f0d8e5bc3d2794a1e41c1724c3dd0e26eb1a6363",
+                "last_used_at": "2018-12-23T01:20:53.266762+00:00",
+                "last_used_ip": "192.168.0.87",
+                "token": "196634bfe745139d2c25af3a0dee0386f436ef8621bd5dfb17371cd4e7b4d6211561519dd42d02e49dd202e1ff3a68c59d9e6994d8972170143ba4ca6418d49a",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-25T15:21:09.034964+00:00",
+                "id": "0d9ad1e6898d46a3a2e336a91044d281",
+                "jwt_key": "2588aa27308f4d5a21a6a8f9323aa9bfd762522a066614cb74bc3e9650cf2241abf9a668c543059d3c37468da92a05e5373175d57d65ce28094f3da4e9def0c3",
+                "last_used_at": "2018-12-25T15:21:09.035301+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "f15572c29871f9e36acefef6645faeb80aa9ccc0a26cdbd230f549aa93c020e30588260362418d46a32245cd9256684b53b19399366948b187cb77053047eee9",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-28T19:22:14.000878+00:00",
+                "id": "d7c0dfb4ec6145188d9e1f607ddea441",
+                "jwt_key": "6a71ad64fa011f8c82792d7aa35949d8b950383b99164e75991dae4969f8b04c61a0e8f84fc03c17bf002eb595a5ca90b1d6641c9dd6339f7377c9074ef5da79",
+                "last_used_at": "2019-01-04T18:43:47.844871+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "daf4d953f2817ca1d401c5750b38b43ad54fced6070579d6c1d39fb39daa963b752435fc8714d2d59e512448b85eb65c62008ae030ce70f14e64395e61c7212d",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.220:8123/",
+                "client_name": null,
+                "created_at": "2019-01-03T09:03:28.623795+00:00",
+                "id": "30cdee2caae646069c45034b47247a5b",
+                "jwt_key": "6379a533834df345b8a1fa23329507028e69904ab109cfa731b98dc64ebf58c4f062bb916b954c3320afcf0c7453e39c9e5c742f12ded0c9f92a78df554eedc2",
+                "last_used_at": "2019-01-03T09:03:28.624140+00:00",
+                "last_used_ip": "192.168.0.87",
+                "token": "218d68d69043987b3139ba2fb586276c053fa22423cc5fb88ffd09266321779034f88375b762f456b29283a6e1112513333f56b49ba0e4b54b680f609087ff69",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://ufinkowohome.duckdns.org/",
+                "client_name": null,
+                "created_at": "2018-12-29T23:33:42.428982+00:00",
+                "id": "74e491ca6de14ef08a11410d53ba0683",
+                "jwt_key": "e88ff352cbe440dd257d73e7328b1466048c15334a62561c0fd873f18d7abf34c4d26d87a1bdfb70e332c6e0add1803f757da7323338f6c2ab2c24844024f027",
+                "last_used_at": "2018-12-29T23:33:42.429575+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "db36eb922807a0b9a64da721aee64857a842be5d1488806ab1ae1dbb4e4646444d71ec511be7e2d0db9d35919305f51bb5dd24a2d9c127c6af18b62cf36938ec",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.220:8123/",
+                "client_name": null,
+                "created_at": "2018-12-19T21:50:20.961300+00:00",
+                "id": "dcaa1df92dea4f4c868295d180f99384",
+                "jwt_key": "28d3869bc30643543f7ac4d90a677de417f628d74d9218b5a32e536688425dc52ef26f9046705f73906a3a32c0afe365fc333056daeeb3cfbc455fa73278b02b",
+                "last_used_at": "2019-01-02T22:40:02.724560+00:00",
+                "last_used_ip": "192.168.0.87",
+                "token": "38d7f6f206eddb0ff4ccc920812154c8ff81976ecd435f97d5a3b87a3e0b64f0c9c7f0b1a07639d4680628d8bd1d008fc3ef465dac937c09f3ab4a9b960051f2",
+                "token_type": "normal",
+                "user_id": "cb5d54dd1ef043b697b860ab5dd48469"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "cb5d54dd1ef043b697b860ab5dd48469",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Maks",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "96b633e333584c0791e963d3ce9e1da6",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Legacy API password user",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

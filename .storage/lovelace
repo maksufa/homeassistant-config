@@ -1,0 +1,170 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        "binary_sensor.motion_sensor_158d000171b94f",
+                        "device_tracker.maks_maks",
+                        "sensor.yr_symbol",
+                        "sensor.chinese_air_pollution_level",
+                        "sensor.us_air_pollution_level",
+                        "sensor.us_main_pollutant",
+                        "sensor.illumination_7811dcb7a4d6",
+                        "sensor.chinese_air_quality_index",
+                        "sensor.chinese_main_pollutant",
+                        "sensor.us_air_quality_index",
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.turn_on_thermostats"
+                                },
+                                {
+                                    "entity": "automation.turn_off_thermostats"
+                                },
+                                {
+                                    "entity": "automation.turn_on_light_in_toilet"
+                                }
+                            ],
+                            "title": "Automations",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "light.living_room",
+                            "type": "light"
+                        },
+                        {
+                            "entities": [
+                                "vacuum.xiaomi_vacuum_cleaner"
+                            ],
+                            "title": "Kajtek ssacz",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.temperature",
+                                "sensor.humidity",
+                                "sensor.battery"
+                            ],
+                            "title": "Bedroom",
+                            "type": "glance"
+                        },
+                        {
+                            "entity": "weather.openweathermap",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entity": "climate.bathroom",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "light.gateway_light_7811dcb7a4d6",
+                            "type": "light"
+                        }
+                    ],
+                    "path": "home",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "sensor.disk_use_percent_home",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.memory_use_percent",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.processor_use",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.memory_use",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.cpu_speed",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.memory_free",
+                            "graph": "line",
+                            "type": "sensor"
+                        },
+                        {
+                            "entity": "sensor.ssl_certificate_expiry",
+                            "graph": "line",
+                            "type": "sensor"
+                        }
+                    ],
+                    "path": "test",
+                    "theme": "Backend-selected",
+                    "title": "Benchmark"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.ficus_benjamina_temperature",
+                                    "image": "/local/ficus.jpg",
+                                    "name": "Ficus benjamina",
+                                    "show_state": false,
+                                    "title": "Ficus benjamina",
+                                    "type": "picture-entity"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.ficus_benjamina_temperature",
+                                        "sensor.ficus_benjamina_moisture",
+                                        "sensor.ficus_benjamina_conductivity",
+                                        "sensor.ficus_benjamina_light_intensity",
+                                        "sensor.ficus_benjamina_battery"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        },
+                        {
+                            "cards": [
+                                {
+                                    "entity": "sensor.sukulencik_temperature",
+                                    "image": "/local/sukulencik.jpg",
+                                    "name": "Sukulencik",
+                                    "show_state": false,
+                                    "title": "Sukulencik",
+                                    "type": "picture-entity"
+                                },
+                                {
+                                    "entities": [
+                                        "sensor.sukulencik_temperature",
+                                        "sensor.sukulencik_moisture",
+                                        "sensor.sukulencik_conductivity",
+                                        "sensor.sukulencik_light_intensity",
+                                        "sensor.sukulencik_battery"
+                                    ],
+                                    "type": "entities"
+                                }
+                            ],
+                            "type": "vertical-stack"
+                        }
+                    ],
+                    "path": "flowers",
+                    "title": "Flowers"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}
