@@ -65,9 +65,24 @@ camera:
     name: Vacuum Map
     still_image_url: https://ufinkowohome.duckdns.org/local/navmap.png
     content_type: image/png
-    framerate: 1
+    framerate: 1 
 
 sensor:
+  - platform: rest
+    resource: http://192.168.0.220/api/cgzhe0yN2yu3zq-0W5V1Fc2WcuFc9TwbbIIDsR2I/sensors/2 
+    value_template: '{{ value_json.state.temperature | float / 100 }}'
+    unit_of_measurement: °C
+    name: 'Hall temperature' 
+  - platform: rest
+    resource: http://192.168.0.220/api/cgzhe0yN2yu3zq-0W5V1Fc2WcuFc9TwbbIIDsR2I/sensors/4
+    value_template: '{{ value_json.state.lightlevel }}'
+    unit_of_measurement: Lux
+    name: 'Hall brightness'
+  - platform: rest
+    resource: http://192.168.0.220/api/cgzhe0yN2yu3zq-0W5V1Fc2WcuFc9TwbbIIDsR2I/sensors/3
+    value_template: '{{ value_json.state.presence }}'
+    scan_interval: 2
+    name: 'Hall motion' 
   - platform: miflora
     mac: 'C4:7C:8D:65:F9:11'
     name: Ficus benjamina
@@ -149,17 +164,24 @@ vacuum:
 xiaomi_aqara:
   discovery_retry: 5
   gateways:
-    - key: 1k0yt4kdht7lsxly
+    - key: 63tosg6prda5u7ph
 
-# Text to speech
+hue:
+  bridges:
+    - host: 192.168.0.220
+
 tts:
   - platform: google
 
 # Cloud
 cloud:
 
+google_assistant:
+  project_id: ufinkowohome-239818
+  exposed_domains: media_player
+
 mqtt:
-  broker: 192.168.0.220
+  broker: 192.168.0.221
   port: 1883
   keepalive: 60
 
@@ -179,7 +201,7 @@ panel_iframe:
   c9ide:
     icon: mdi:monitor-dashboard
     title: 'c9IDE'
-    url: 'http://192.168.0.220:8383'
+    url: 'http://192.168.0.221:8383'
   hainstance2:
     icon: mdi:monitor-dashboard
     title: 'HAInstance2'

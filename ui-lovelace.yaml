@@ -5,21 +5,52 @@ resources:
 title: Home
 views:
   - cards:
+      - type: media-control
+        entity: media_player.living_room_speaker
       - type: entities
         entities:
           - entity: automation.turn_on_thermostats
           - entity: automation.turn_off_thermostats
           - entity: automation.turn_on_light_in_toilet
         title: Automations
-      - type: picture-entity
-        entity: camera.vacuum_map
-        image: /local/navmap.png
+      - type: thermostat
+        entity: climate.bathroom
+      - type: thermostat
+        entity: climate.livingroom
+      - type: entities
+        title: Hall
+        show_header_toggle: true
+        entities:
+          - light.hue_white_lamp_1
+          - light.hue_white_lamp_2
+          - light.hue_white_lamp_3
+          - sensor.hall_temperature
+          - sensor.hall_brightness
+          - sensor.hall_motion
+      - type: entities
+        title: Toilet
+        show_header_toggle: true
+        entities:
+         - light.hue_ambiance_lamp_1
+      - type: entities
+        title: Cloakroom
+        show_header_toggle: true
+        entities:
+         - light.hue_white_lamp_4
+         - light.hue_white_lamp_5
+      - type: light
+        entity: light.gateway_light_7811dcb7a4d6    
       - type: light
         entity: light.living_room
-      - type: entities
+      - type: picture-glance
+        entity: vacuum.xiaomi_vacuum_cleaner
         entities:
           - vacuum.xiaomi_vacuum_cleaner
+        image: /local/vaccum.jpg
         title: Kajtek ssacz
+      - type: picture-entity
+        entity: camera.vacuum_map
+        image: /local/navmap.png    
       - type: glance
         entities:
           - sensor.temperature
@@ -32,12 +63,6 @@ views:
       - type: iframe
         url: https://embed.windy.com/embed2.html?lat=52.097&lon=19.116&zoom=6&level=surface&overlay=rain&menu=&message=true&marker=&calendar=24&pressure=&type=map&location=coordinates&detail=&detailLat=52.230&detailLon=21.010&metricWind=default&metricTemp=default&radarRange=-1
         aspect_ratio: 100%  
-      - type: thermostat
-        entity: climate.bathroom
-      - type: thermostat
-        entity: climate.livingroom  
-      - type: light
-        entity: light.gateway_light_7811dcb7a4d6
     badges:
       - binary_sensor.motion_sensor_158d000171b94f
       - device_tracker.maks_maks

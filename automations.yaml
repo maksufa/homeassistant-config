@@ -153,7 +153,7 @@
   alias: Ficus benjamina moisture too low!
   trigger:
   - above: '0'
-    below: '38'
+    below: '30'
     entity_id: sensor.ficus_benjamina_moisture
     platform: numeric_state
   condition: []
@@ -162,3 +162,19 @@
       message: Ficus moisture to low!
       title: Warning
     service: persistent_notification.create
+- id: '1549306257874'
+  alias: Turn on lights at night
+  trigger:
+  - entity_id: light.przedpokoj
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - after: 00:00:00
+    before: 06:00:00
+    condition: time
+  action:
+  - data:
+      brightness: 1
+      entity_id: light.przedpokoj
+    service: light.turn_on
