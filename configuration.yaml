@@ -198,10 +198,6 @@ panel_custom:
     config: !include floorplan.yaml
 
 panel_iframe:
-  c9ide:
-    icon: mdi:monitor-dashboard
-    title: 'c9IDE'
-    url: 'http://192.168.0.221:8383'
   hainstance2:
     icon: mdi:monitor-dashboard
     title: 'HAInstance2'

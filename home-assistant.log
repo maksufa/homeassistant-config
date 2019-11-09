@@ -1,6 +1,6 @@
-2019-01-26 23:52:51 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect due to exception: [Errno 111] Connection refused
-2019-01-26 23:52:56 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to owntracks/#
-2019-01-26 23:52:56 ERROR (MainThread) [homeassistant.setup] Error handling when_setup callback for mqtt
+2019-11-09 16:06:07 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect due to exception: [Errno 111] Connection refused
+2019-11-09 16:06:12 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to owntracks/#
+2019-11-09 16:06:12 ERROR (MainThread) [homeassistant.setup] Error handling when_setup callback for mqtt
 Traceback (most recent call last):
   File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/setup.py", line 263, in when_setup
     await when_setup_cb(hass, component)
@@ -15,10 +15,10 @@ Traceback (most recent call last):
   File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 821, in _raise_on_error
     'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
 homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
-2019-01-26 23:52:56 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_temperature/state
-2019-01-26 23:52:56 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_humidity/state
-2019-01-26 23:52:56 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_battery/state
-2019-01-26 23:52:57 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2019-11-09 16:06:13 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_battery/state
+2019-11-09 16:06:13 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_temperature/state
+2019-11-09 16:06:13 DEBUG (MainThread) [homeassistant.components.mqtt] Subscribing to slave/sensor/mitemp_bt_humidity/state
+2019-11-09 16:06:13 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
     result = coro.send(None)
@@ -41,7 +41,7 @@ Traceback (most recent call last):
   File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 821, in _raise_on_error
     'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
 homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
-2019-01-26 23:52:57 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2019-11-09 16:06:14 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
     result = coro.send(None)
@@ -64,7 +64,7 @@ Traceback (most recent call last):
   File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 821, in _raise_on_error
     'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
 homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
-2019-01-26 23:52:57 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2019-11-09 16:06:14 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
     result = coro.send(None)
@@ -87,73 +87,62 @@ Traceback (most recent call last):
   File "/srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/mqtt/__init__.py", line 821, in _raise_on_error
     'Error talking to MQTT: {}'.format(mqtt.error_string(result_code)))
 homeassistant.exceptions.HomeAssistantError: Error talking to MQTT: The client is not currently connected.
-2019-01-26 23:53:05 WARNING (MainThread) [homeassistant.setup] Setup of xiaomi_aqara is taking over 10 seconds.
-2019-01-26 23:53:20 ERROR (Thread-2) [homeassistant.components.xiaomi_aqara] No gateway discovered
-2019-01-26 23:53:20 ERROR (MainThread) [homeassistant.setup] Setup failed for xiaomi_aqara: Component failed to initialize.
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
-2019-01-26 23:53:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
-2019-01-26 23:54:05 ERROR (Thread-11) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
-2019-01-27 00:33:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
-2019-01-27 00:33:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
-2019-01-27 00:33:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
-2019-01-27 00:33:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
-2019-01-27 01:09:27 ERROR (Thread-4) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
-2019-01-27 01:13:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
-2019-01-27 01:13:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
-2019-01-27 01:13:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
-2019-01-27 01:13:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
-2019-01-27 02:24:49 ERROR (Thread-21) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
-2019-01-27 02:33:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_moisture is taking over 10 seconds
-2019-01-27 02:33:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_temperature is taking over 10 seconds
-2019-01-27 02:33:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_conductivity is taking over 10 seconds
-2019-01-27 02:33:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_light_intensity is taking over 10 seconds
-2019-01-27 02:42:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of vacuum.xiaomi_vacuum_cleaner is taking over 10 seconds
-2019-01-27 02:42:28 ERROR (Thread-2) [miio.device] Unable to discover a device at address 192.168.0.122
-2019-01-27 02:42:28 WARNING (Thread-2) [homeassistant.components.vacuum.xiaomi_miio] Got exception while fetching the state: Unable to discover the device 192.168.0.122
-2019-01-27 03:13:16 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
-2019-01-27 03:13:16 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
-2019-01-27 03:13:16 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
-2019-01-27 03:13:16 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
-2019-01-27 05:13:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
-2019-01-27 05:13:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
-2019-01-27 05:13:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
-2019-01-27 05:13:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
-2019-01-27 05:53:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_light_intensity is taking over 10 seconds
-2019-01-27 05:53:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_temperature is taking over 10 seconds
-2019-01-27 05:53:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_moisture is taking over 10 seconds
-2019-01-27 05:53:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_conductivity is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_light_intensity is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_temperature is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_conductivity is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_moisture is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
-2019-01-27 07:13:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
-2019-01-27 09:58:02 ERROR (Thread-10) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
-2019-01-27 10:18:40 ERROR (Thread-10) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
-2019-01-27 10:33:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
-2019-01-27 10:33:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
-2019-01-27 10:33:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
-2019-01-27 10:33:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
-2019-01-27 11:53:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
-2019-01-27 11:53:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
-2019-01-27 11:53:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
-2019-01-27 11:53:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
-2019-01-27 11:53:56 WARNING (Thread-10) [homeassistant.components.climate.eq3btsmart] Updating the state failed: Failed to connect to peripheral 00:1A:22:0F:D0:72, addr type: public
-2019-01-27 12:17:15 WARNING (Thread-7) [homeassistant.components.climate.eq3btsmart] Updating the state failed: Failed to connect to peripheral 00:1A:22:0F:D0:72, addr type: public
-2019-01-27 13:13:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
-2019-01-27 13:13:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
-2019-01-27 13:13:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
-2019-01-27 13:13:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
-2019-01-27 13:51:32 WARNING (MainThread) [homeassistant.helpers.entity] Updating state for vacuum.xiaomi_vacuum_cleaner (<class 'homeassistant.components.vacuum.xiaomi_miio.MiroboVacuum'>) took 4.786 seconds. Please report platform to the developers at https://goo.gl/Nvioub
-2019-01-27 13:53:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_conductivity is taking over 10 seconds
-2019-01-27 13:53:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_moisture is taking over 10 seconds
-2019-01-27 13:53:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_temperature is taking over 10 seconds
-2019-01-27 13:53:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_light_intensity is taking over 10 seconds
+2019-11-09 16:06:17 ERROR (Thread-15) [homeassistant.components.light.yeelight] Failed to connect to bulb 192.168.0.101, Living Room: A socket error occurred when sending the command.
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_light_intensity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_conductivity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_temperature is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.ficus_benjamina_moisture is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
+2019-11-09 16:06:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
+2019-11-09 16:06:30 ERROR (Thread-6) [homeassistant.components.sensor.cert_expiry] Connection timeout with server: ufinkowohome.duckdns.org
+2019-11-09 16:19:23 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 17:45:32 ERROR (Recorder) [homeassistant.components.recorder.util] Error executing query: (sqlite3.DatabaseError) database disk image is malformed [SQL: 'INSERT INTO events (event_type, event_data, origin, time_fired, created, context_id, context_user_id) VALUES (?, ?, ?, ?, ?, ?, ?)'] [parameters: ('state_changed', '{"entity_id": "sensor.memory_free", "old_state": {"attributes": {"icon": "mdi:memory", "friendly_name": "Memory free", "unit_of_measurement": "MiB"}, ... (425 characters truncated) ... 17:45:29.037980+00:00", "state": "740.3", "context": {"id": "e8cd2cba408e46bdaf125b8ea65b4938", "user_id": null}, "entity_id": "sensor.memory_free"}}', 'LOCAL', '2019-11-09 17:45:29.038157', '2019-11-09 17:45:32.937521', 'e8cd2cba408e46bdaf125b8ea65b4938', None)] (Background on this error at: http://sqlalche.me/e/4xp6)
+2019-11-09 18:06:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_conductivity is taking over 10 seconds
+2019-11-09 18:06:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_moisture is taking over 10 seconds
+2019-11-09 18:06:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_temperature is taking over 10 seconds
+2019-11-09 18:06:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.sukulencik_light_intensity is taking over 10 seconds
+2019-11-09 18:46:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_moisture is taking over 10 seconds
+2019-11-09 18:46:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_temperature is taking over 10 seconds
+2019-11-09 18:46:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_light_intensity is taking over 10 seconds
+2019-11-09 18:46:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.calluna_vulgaris_conductivity is taking over 10 seconds
+2019-11-09 20:49:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of climate.livingroom is taking over 10 seconds
+2019-11-09 21:00:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of climate.livingroom is taking over 10 seconds
+2019-11-09 21:01:59 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:02:09 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:02:19 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:02:29 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:02:39 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:02:59 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:03:09 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:03:19 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:03:29 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:03:39 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:03:49 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:04:09 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:04:19 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:04:29 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:04:40 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:04:50 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:05:10 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:05:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of climate.bathroom is taking over 10 seconds
+2019-11-09 21:05:20 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:05:30 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:05:40 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:05:50 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:00 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:10 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:20 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:30 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:40 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:06:50 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:07:10 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:07:20 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:07:30 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:07:40 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image
+2019-11-09 21:07:50 ERROR (MainThread) [homeassistant.components.camera.generic] Timeout getting camera image

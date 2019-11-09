@@ -21,6 +21,28 @@
                 "source": "import",
                 "title": "configuration.yaml",
                 "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "001788FFFEB3110F",
+                    "host": "192.168.0.220",
+                    "username": "nwIe3fj0UlguH9X6jyhlLN82ZkifxaPCVFpeT3FM"
+                },
+                "domain": "hue",
+                "entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "source": "import",
+                "title": "Philips hue",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "3a1058b935d442d99271e0d7c6e506af",
+                "source": "user",
+                "title": "Google Cast",
+                "version": 1
             }
         ]
     },

@@ -81,6 +81,69 @@
                 "name": null,
                 "platform": "airvisual",
                 "unique_id": "52.244206,20.996723_cn_main_pollutant"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "02bb7407863345ec830dd870e0bc96e9",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_1",
+                "name": "Lamp 1",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:b2:40:94-0b"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "2ee533b16f944106b5d78df27d1f6409",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_3",
+                "name": "Lamp 3",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:b1:17:44-0b"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "a6be7e5a078a48b487d66d30a2ddff3c",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_2",
+                "name": "Lamp 2",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:b2:42:37-0b"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "dd2e4080fc3d4413bea64b64fa48c753",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_4",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:02:39:3c-0b"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "aa816d5573c04779b6b5f0ca9ac35e49",
+                "disabled_by": null,
+                "entity_id": "light.hue_ambiance_lamp_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:f3:18:70-0b"
+            },
+            {
+                "config_entry_id": "3ab8770d0c5f43d2b414ef9947c6f713",
+                "device_id": "17f46a40b5e84b898e84b6fe7f8ab7ba",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_5",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:02:39:53-0b"
+            },
+            {
+                "config_entry_id": "3a1058b935d442d99271e0d7c6e506af",
+                "device_id": "632f83058ba746cfb816cd170289f1b8",
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "a74f5a2d-2ecf-3502-1116-4cf8cdc21614"
             }
         ]
     },
